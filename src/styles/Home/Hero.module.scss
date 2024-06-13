@@ -1,0 +1,118 @@
+.hero {
+  margin-top: 96px;
+  height: 70vh;
+  width: 100%;
+
+  @media screen and (min-width:1600px) {
+    height: 80vh;
+  }
+
+  @media screen and (max-width:640px) {
+    margin-top:67px;
+  }
+
+  .swiper {
+    height: 100%;
+    width: 100%;
+
+    .imageContainer {
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      .leftText {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: absolute;
+        top: 22%;
+        left: 10%;
+
+        @media screen and (max-width:1280px) {
+            left: 5%;
+        }
+
+        p {
+          color: #333333;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1rem;
+        }
+
+        h2 {
+          color: #06264b;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 4rem;
+          margin-bottom: 1rem;
+
+          @media screen and (max-width:1280px) {
+            font-size: 3rem;
+          }
+        }
+
+        button {
+            background-color: #06264b;
+            border: 1px solid #06264b;
+            border-radius: 5px;
+            padding: 1rem 3rem;
+            font-size: 1.25rem;
+            color: white;
+            cursor: pointer;
+            width: fit-content;
+
+            @media screen and (max-width:1280px) {
+                font-size: 1rem;
+              }
+          }
+      }
+
+      .rightText {
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+        position: absolute;
+        top: 22%;
+        right: 10%;
+
+        @media screen and (max-width:1280px) {
+            right: 5%;
+        }
+
+        p {
+          color: #333333;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1rem;
+        }
+
+        h2 {
+          color: #06264b;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 4rem;
+          margin-bottom: 1rem;
+
+          @media screen and (max-width:1280px) {
+            font-size: 3rem;
+          }
+        }
+
+        button {
+            background-color: #06264b;
+            border: 1px solid #06264b;
+            border-radius: 5px;
+            padding: 1rem 3rem;
+            font-size: 1.25rem;
+            color: white;
+            cursor: pointer;
+            width: fit-content;
+
+            @media screen and (max-width:1280px) {
+                font-size: 1rem;
+              }
+          }
+      }
+    }
+  }
+}
