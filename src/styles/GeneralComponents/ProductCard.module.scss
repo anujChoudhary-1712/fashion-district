@@ -1,0 +1,75 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+
+  .image {
+    height: 320px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+
+    .saleTag,
+    .salePercentage {
+      background-color: #98d8ca;
+      color: white;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+      border-radius: 12px;
+      position: absolute;
+      font-weight: 500;
+    }
+
+    .saleTag {
+      left: 2%;
+      top: 4%;
+    }
+
+    .salePercentage {
+      left: 2%;
+      top: 14%;
+    }
+
+    .soldoutTag{
+        background-color: #F84258;
+      color: white;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+      border-radius: 12px;
+      position: absolute;
+      left: 2%;
+      top: 4%;
+      font-weight: 500;
+    }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #06264b;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #06264b;
+  }
+
+  .priceContainer {
+    display: flex;
+    gap: 0.5rem;
+
+    .salePrice {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #06264b;
+    }
+
+    .normalPrice {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #aaaaaa;
+      text-decoration: line-through;
+    }
+  }
+}

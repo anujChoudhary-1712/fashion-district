@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
 import { IoCart } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -10,7 +9,6 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
-  const [showShopDropdown, setShowShopDropdown] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <>
@@ -20,37 +18,8 @@ const Header = () => {
           <Link href={"/"} className={styles.link}>
             Home
           </Link>
-          <div
-            className={styles.shoplink}
-            onClick={() => setShowShopDropdown(!showShopDropdown)}
-            onMouseEnter={() => setShowShopDropdown(true)}
-            onMouseLeave={() => setShowShopDropdown(false)}
-          >
-            <Link href={"/"} className={styles.link}>
-              Shop <FaChevronDown size={12} />
-            </Link>
-            {showShopDropdown && (
-              <motion.div
-                className={styles.shopDropdown}
-                initial={{ top: 60, position: "absolute", opacity: 0.2 }}
-                whileInView={{ top: 26, opacity: 1 }}
-                transition={{ duration: 0.5, ease: "linear" }}
-                viewport={{ once: true }}
-              >
-                <Link href={"/"} className={styles.dropdownLink}>
-                  Men Fashion
-                </Link>
-                <Link href={"/"} className={styles.dropdownLink}>
-                  Women Fashion
-                </Link>
-                <Link href={"/"} className={styles.dropdownLink}>
-                  Kids Fashion
-                </Link>
-              </motion.div>
-            )}
-          </div>
           <Link href={"/"} className={styles.link}>
-            Product
+            Products
           </Link>
           <Link href={"/"} className={styles.link}>
             Blog
@@ -100,29 +69,8 @@ const Header = () => {
                 <Link href={"/"} className={styles.link}>
                   Home
                 </Link>
-                <div
-                  className={styles.shoplink}
-                  onClick={() => setShowShopDropdown(!showShopDropdown)}
-                >
-                  <Link href={"/"} className={styles.link}>
-                    Shop <FaChevronDown size={12} />
-                  </Link>
-                  {showShopDropdown && (
-                    <div className={styles.shopDropdown}>
-                      <Link href={"/"} className={styles.dropdownLink}>
-                        Men Fashion
-                      </Link>
-                      <Link href={"/"} className={styles.dropdownLink}>
-                        Women Fashion
-                      </Link>
-                      <Link href={"/"} className={styles.dropdownLink}>
-                        Kids Fashion
-                      </Link>
-                    </div>
-                  )}
-                </div>
                 <Link href={"/"} className={styles.link}>
-                  Product
+                  Products
                 </Link>
                 <Link href={"/"} className={styles.link}>
                   Blog
